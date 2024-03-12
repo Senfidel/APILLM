@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import typing as t
+import openai
 # LangChain / Langsmith
 from langchain_openai import ChatOpenAI
 from langchain.chains import LLMChain
