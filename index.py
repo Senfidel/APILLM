@@ -1,8 +1,9 @@
 import streamlit as st
 import os
 import typing as t
-import openai
 # LangChain / Langsmith
+import openai
+import langchain
 from langchain_openai import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
@@ -52,7 +53,7 @@ def connect_to_weaviate() -> weaviate.client.WeaviateClient:
 
 
 class Retrieve(object):
-    collection_name = "Alexis_union_mars_2024_002"
+    collection_name = "Etienne_afr_mars_2024_001"
 
     def __init__(self, query: str, search_params: t.Dict) -> None:
         self.client = connect_to_weaviate()
