@@ -51,7 +51,7 @@ def connect_to_weaviate() -> weaviate.client.WeaviateClient:
 
 
 class Retrieve(object):
-    collection_name = "Alexis_union_mars_2024_002"
+    collection_name = "Etienne_afr_mars_2024_001"
 
     def __init__(self, query: str, search_params: t.Dict) -> None:
         self.client = connect_to_weaviate()
@@ -143,10 +143,10 @@ class Generate(object):
 
 
 '''
-La partie Streamlit
+Projet streamlit D2SN 2024
 '''
 
-st.title('RAG workshop')
+st.title('RAG workshop sur le developpement en Afrique')
 
 
 with st.sidebar:
