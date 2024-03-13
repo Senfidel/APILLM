@@ -9,8 +9,8 @@ import weaviate
 
 from langchain.prompts import ChatPromptTemplate
 prompt_generative_context = ChatPromptTemplate.from_template(
-"""Prends le rôle d'une journaliste spécialisée sur l'Union européenne (UE).
-Tu écris un article sur l'UE pour le grand public.
+        """Prends le rôle d'une sociologue Africaine spécialisée sur le developpement de l'Afrique.
+Tu écris un article sur lAfrique pour le grand public.
 
 En tant qu'IA, tu peux utiliser tes connaissances générales pour répondre à la question mais surtout n'invente rien.
 
@@ -29,7 +29,6 @@ Réponds à la question en prenant compte l'information dans le contexte.
 Ta réponse:
 """
     )
-
 
 
 def connect_to_weaviate() -> weaviate.client.WeaviateClient:
